@@ -5,13 +5,13 @@ const educationData = [
     degree: "Bachelor of Technology in Computer Science",
     institution: "ABES Engineering College, Ghaziabad",
     period: "2025 — 2029",
-    description: "Specialized in Software Engineering and Human-Computer Interaction. Built multiple full-stack projects and graduated with Honors."
+    description: "Focusing on Web Development, Data Structures, Algorithms, and Competitive Coding."
   },
   {
     degree: "Minor in Artificial Intelligence",
     institution: "IIT Ropar",
     period: "2024 — 2025",
-    description: "Focused on Mathematics, Physics, and Computer Science. Actively participated in coding competitions."
+    description: "Focused on Mathematics, Machine Learning, Artificial Intelligence, and Deep Learning."
   }
 ];
 

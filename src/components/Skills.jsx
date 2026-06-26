@@ -33,9 +33,9 @@ const skillCategories = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-32 px-6 relative z-10">
-      <div className="max-w-7xl mx-auto">
-        
+    <section id="skills" className="py-32 px-6 relative z-10 w-full">
+      
+      <div className="max-w-7xl mx-auto w-full relative z-30">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -46,17 +46,18 @@ export default function Skills() {
           <div className="h-1 w-20 bg-gradient-to-r from-[#f97316] to-[#4f46e5] rounded-full mx-auto md:mx-0"></div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8" style={{ perspective: 1200 }}>
           {skillCategories.map((category, index) => (
             <motion.div
               key={category.title}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, rotateX: -40, y: 80, z: -150 }}
+              whileInView={{ opacity: 1, rotateX: 0, y: 0, z: 0 }}
               viewport={{ once: false, margin: "-50px" }}
-              transition={{ duration: 0.8, delay: index * 0.15, type: "spring", bounce: 0.4 }}
-              className="bg-white/5 border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-colors group shadow-2xl"
+              transition={{ duration: 0.9, delay: index * 0.15, type: "spring", bounce: 0.3 }}
+              style={{ transformStyle: "preserve-3d" }}
+              className="bg-[rgba(20,20,20,0.9)] border border-white/10 p-8 rounded-3xl hover:bg-[rgba(30,30,30,0.9)] transition-colors group shadow-2xl"
             >
-              <div className="w-16 h-16 rounded-2xl bg-[#4f46e5]/10 flex items-center justify-center text-[#4f46e5] mb-8 group-hover:bg-[#4f46e5] group-hover:text-white transition-all duration-300">
+              <div className="w-16 h-16 rounded-2xl bg-[#4f46e5]/10 flex items-center justify-center text-[#4f46e5] mb-8 group-hover:bg-[#4f46e5] group-hover:text-white transition-all duration-300 shadow-[0_0_15px_rgba(79,70,229,0.2)] group-hover:shadow-[0_0_30px_rgba(79,70,229,0.5)]">
                 {category.icon}
               </div>
               <h3 className="text-2xl font-bold text-white mb-6">{category.title}</h3>
@@ -74,8 +75,8 @@ export default function Skills() {
             </motion.div>
           ))}
         </div>
-
       </div>
+
     </section>
   );
 }
