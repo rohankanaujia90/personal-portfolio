@@ -1,24 +1,28 @@
 import { useRef } from 'react';
 import { motion, useMotionValue, useSpring, useTransform, useMotionTemplate } from 'framer-motion';
 
+import currencyConverterImg from '../assets/currencyConverter.png';
+import youtubeImg from '../assets/youtube.png';
+import airbnbImg from '../assets/airbnb.png';
+
 const projects = [
   {
     id: 1,
     title: "Real Time Currency Converter",
     category: "React.js",
-    image: "src/assets/currencyConverter.png"
+    image: currencyConverterImg
   },
   {
     id: 2,
     title: "Youtube Homepage Clone",
     category: "HTML, CSS",
-    image: "src/assets/youtube.png"
+    image: youtubeImg
   },
   {
     id: 3,
     title: "Airbnb Clone",
     category: "React.js",
-    image: "src/assets/airbnb.png"
+    image: airbnbImg
   }
 ];
 
