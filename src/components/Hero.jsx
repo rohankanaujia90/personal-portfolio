@@ -45,9 +45,9 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="flex flex-col justify-center text-center lg:text-left h-full pt-28 pb-10 lg:pt-16 lg:pb-0"
+            className="flex flex-col justify-center text-center lg:text-left h-full pt-4 lg:pt-16 lg:pb-0"
           >
-            <div className="mt-auto lg:mt-0">
+            <div className="lg:mt-0">
               <h2 className="text-lg sm:text-xl text-gray-400 mb-1 font-medium tracking-wide">
                 Hello, I'm
               </h2>
